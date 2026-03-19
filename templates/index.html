@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Rafael Diaz | Seguros e Inversiones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <div class="logo">RAFAEL <span>DIAZ</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#seguros">Seguros</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#cotizacion" class="btn-nav">Cotizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>AGENCIA <br><span>RAFAEL DIAZ</span></h1>
+                <p>Protegemos lo que más valoras: tu vida, tu familia y tu patrimonio con asesoría de élite.</p>
+                <div class="hero-actions">
+                    <a href="#cotizacion" class="btn-gold">Solicitar Cotización</a>
+                    <a href="#seguros" class="btn-outline">Ver Pólizas</a>
+                </div>
+            </div>
+            <div class="hero-img" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Consultoría">
+            </div>
+        </div>
+    </header>
+
+    <section id="seguros" class="services">
+        <div class="container">
+            <h2 class="section-title">Soluciones de Protección</h2>
+            <div class="grid-services">
+                <div class="card" data-aos="fade-up">
+                    <img src="{{ url_for('static', filename='images/vida.jpg') }}" alt="Vida">
+                    <div class="card-body">
+                        <h3>Seguro de Vida</h3>
+                        <p>Protección y respaldo para el futuro de los tuyos.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="{{ url_for('static', filename='images/salud.jpg') }}" alt="Salud">
+                    <div class="card-body">
+                        <h3>Seguro de Salud</h3>
+                        <p>Atención médica premium sin preocupaciones.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="{{ url_for('static', filename='images/auto.jpg') }}" alt="Auto">
+                    <div class="card-body">
+                        <h3>Automóvil</h3>
+                        <p>Seguridad total en cada kilómetro que recorres.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="{{ url_for('static', filename='images/hogar.jpg') }}" alt="Hogar">
+                    <div class="card-body">
+                        <h3>Dorada del Hogar</h3>
+                        <p>Tu patrimonio protegido ante cualquier imprevisto.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="{{ url_for('static', filename='images/viajes.jpg') }}" alt="Viajes">
+                    <div class="card-body">
+                        <h3>Viajes</h3>
+                        <p>Asistencia global para disfrutar sin preocupaciones.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="{{ url_for('static', filename='images/industria.jpg') }}" alt="Industria">
+                    <div class="card-body">
+                        <h3>Empresas e Industria</h3>
+                        <p>Blindaje corporativo diseñado a tu medida.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="{{ url_for('static', filename='images/medica.jpg') }}" alt="Rc_medico">
+                    <div class="card-body">
+                        <h3>Rc_Medico</h3>
+                        <p>Ejerce tu Profesión con Respaldo.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="{{ url_for('static', filename='images/paz.jpg') }}" alt="Servicios funerario">
+                    <div class="card-body">
+                        <h3>Servicios Funerarios</h3>
+                        <p>Apoyo y serenidad en los momentos difíciles.</p>
+                        <a href="#cotizacion" class="card-link">Me interesa →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="beneficios" class="benefits">
+    <div class="container">
+        <div class="benefits-content" data-aos="fade-up">
+            <h2 class="section-title">¿Por qué elegir Agencia Rafael Diaz?</h2>
+            <div class="benefits-text">
+                <p class="highlight-text">Más de 30 años de experiencia acompañando a las familias venezolanas.</p>
+                <p>Nuestra trayectoria nos permite ofrecerte la seguridad de elegir el mejor plan para todos tus proyectos. Trabajamos de la mano con las compañías líderes del mercado nacional e internacional:</p>
+                
+                <div class="aliados-logos">
+                    <span>Mapfre</span> • <span>Mercantil</span> • <span>Seguros Caracas</span> • <span>Pirámide</span>
+                </div>
+                
+                <p>Garantizamos un blindaje patrimonial con asesoría de élite, adaptada a la realidad actual y con el respaldo que solo tres décadas de compromiso pueden brindar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <a href="#" class="whatsapp-btn">W</a>
+
+    <section id="cotizacion" class="contact">
+        <div class="container">
+            <div class="contact-card" data-aos="fade-up">
+                <h2>Inicia tu Cotización</h2>
+                <p>Completa tus datos y un experto te contactará.</p>
+                <form id="quote-form">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                    <select name="seguro">
+                        <option value="vida">Seguro de Vida</option>
+                        <option value="salud">Seguro de Salud</option>
+                        <option value="auto">Seguro de Auto</option>
+                        <option value="hogar">Dorada del Hogar</option>
+                        <option value="viajes">Viajes</option>
+                        <option value="empresa">Empresas e Industria</option>
+                        <option value="medico">Rc_Medico</option>
+                        <option value="funerario">Servicios Funerarios</option>
+                    </select>
+                    <textarea name="mensaje" placeholder="Mensaje adicional..."></textarea>
+                    <button type="submit" class="btn-gold">Enviar Solicitud</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Agencia Rafael Diaz. Todos los derechos reservados.</p>
+            <p>Asesoría de élite en seguros y patrimonio.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
